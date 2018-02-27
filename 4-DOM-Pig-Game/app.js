@@ -43,13 +43,13 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         // Next player
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
         roundScore = 0;
-        
+        // reset current score
         document.getElementById('current-0').textContent = '0';
         document.getElementById('current-1').textContent = '0';
-        
+        // toggle active state
         document.querySelector('.player-0-panel').classList.toggle('active');
         document.querySelector('.player-1-panel').classList.toggle('active');
-        
+        // remove dice on start of player turn
         document.querySelector('.dice').style.display = 'none';
     }
 });
